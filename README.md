@@ -17,7 +17,7 @@ Full functionnalities description [here](https://github.com/Thomas-SBE/caml-inte
 
 **For both installations an OCaml installation is required, you can find instructions [HERE](https://ocaml.org/docs/install.html) !**
 
-###<img aling="left" alt="Windows" width="16px" src="https://img.icons8.com/color/72/microsoft.png" /> For Windows Users :
+### <img aling="left" alt="Windows" width="16px" src="https://img.icons8.com/color/72/microsoft.png" /> For Windows Users :
 
 To properly use this plugin it is required to define where your OCaml folder is, this
 can be done in the `Settings -> Tools -> OCamlJ`, from there you can either type the path to where
@@ -31,7 +31,7 @@ OCaml is installed or browse for it.
 
 **After defining the location of OCaml, either restart IntelliJ or Restart the interpreter, see below under `Restart the OCaml Interpreter` section in actions.**
 
-###<img aling="left" alt="Linux" width="16px" src="https://img.icons8.com/color/72/linux.png" /> For Linux Users :
+### <img aling="left" alt="Linux" width="16px" src="https://img.icons8.com/color/72/linux.png" /> For Linux Users :
 
 If Ocaml has been installed properly, you should not need to set an installation location in the settings.
 To verify that Ocaml is properly installed, launch a terminal and type `ocaml`, it should let you in the Ocaml interpreter.
