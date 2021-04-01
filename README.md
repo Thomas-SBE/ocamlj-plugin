@@ -1,40 +1,90 @@
-# caml-intellij
-
-![Build](https://github.com/Thomas-SBE/caml-intellij/workflows/Build/badge.svg)
-[![Version](https://img.shields.io/jetbrains/plugin/v/PLUGIN_ID.svg)](https://plugins.jetbrains.com/plugin/PLUGIN_ID)
-[![Downloads](https://img.shields.io/jetbrains/plugin/d/PLUGIN_ID.svg)](https://plugins.jetbrains.com/plugin/PLUGIN_ID)
-
-## Template ToDo list
-- [x] Create a new [IntelliJ Platform Plugin Template][template] project.
-- [ ] Verify the [pluginGroup](/gradle.properties), [plugin ID](/src/main/resources/META-INF/plugin.xml) and [sources package](/src/main/kotlin).
-- [ ] Review the [Legal Agreements](https://plugins.jetbrains.com/docs/marketplace/legal-agreements.html).
-- [ ] [Publish a plugin manually](https://plugins.jetbrains.com/docs/intellij/publishing-plugin.html?from=IJPluginTemplate) for the first time.
-- [ ] Set the Plugin ID in the above README badges.
-- [ ] Set the [Deployment Token](https://plugins.jetbrains.com/docs/marketplace/plugin-upload.html).
-- [ ] Click the <kbd>Watch</kbd> button on the top of the [IntelliJ Platform Plugin Template][template] to be notified about releases containing new features and fixes.
+# OcamlJ Embeded IntelliJ Interpreter
 
 <!-- Plugin description -->
-This Fancy IntelliJ Platform Plugin is going to be your implementation of the brilliant ideas that you have.
+**OcamlJ** is an embeded Ocaml terminal / console in IntelliJ, it also allows file reading
+and executing with one click. This plugin **does not** highlight syntax, it is recommended
+to download another plugin for that. 
 
-This specific section is a source for the [plugin.xml](/src/main/resources/META-INF/plugin.xml) file which will be extracted by the [Gradle](/build.gradle.kts) during the build process.
+I suggest [ReasonML Plugin](https://plugins.jetbrains.com/plugin/9440-reasonml) for syntax highlighting.
 
-To keep everything working, do not remove `<!-- ... -->` sections. 
+Full functionnalities description [here](https://github.com/Thomas-SBE/caml-intellij#readme).
+
 <!-- Plugin description end -->
 
-## Installation
+------
 
-- Using IDE built-in plugin system:
-  
-  <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Marketplace</kbd> > <kbd>Search for "caml-intellij"</kbd> >
-  <kbd>Install Plugin</kbd>
-  
-- Manually:
+##Getting Started
 
-  Download the [latest release](https://github.com/Thomas-SBE/caml-intellij/releases/latest) and install it manually using
-  <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>⚙️</kbd> > <kbd>Install plugin from disk...</kbd>
+**For both installations an OCaml installation is required, you can find instructions [HERE](https://ocaml.org/docs/install.html) !**
 
+###<img aling="left" alt="Windows" width="16px" src="https://img.icons8.com/color/72/microsoft.png" /> For Windows Users :
 
----
-Plugin based on the [IntelliJ Platform Plugin Template][template].
+To properly use this plugin it is required to define where your OCaml folder is, this
+can be done in the `Settings -> Tools -> OCamlJ`, from there you can either type the path to where
+OCaml is installed or browse for it.
 
-[template]: https://github.com/JetBrains/intellij-platform-plugin-template
+> **_IMPORTANT NOTE :_** _You must select a folder containing the following directories :_ 
+> 
+> `.\bin` _where ocaml.exe is installed._
+> 
+> `.\lib\ocaml` _where all ocaml modules are stored._
+
+**After defining the location of OCaml, either restart IntelliJ or Restart the interpreter, see below under `Restart the OCaml Interpreter` section in actions.**
+
+###<img aling="left" alt="Linux" width="16px" src="https://img.icons8.com/color/72/linux.png" /> For Linux Users :
+
+If Ocaml has been installed properly, you should not need to set an installation location in the settings.
+To verify that Ocaml is properly installed, launch a terminal and type `ocaml`, it should let you in the Ocaml interpreter.
+This is a requirement for Linux users !
+
+## Current Features
+
+> *Note that this plugin is still under development, errors and bugs may occur, please report them by creating issues* [*here*](https://github.com/Thomas-SBE/caml-intellij/issues).
+
+## Ocaml Interpreter
+By default the interpreter is located in the bottom right hand corner of the IDE,
+simply open it by clicking it. It can otherwise be found in the `View -> Tool Windows -> Ocaml Interpreter`.
+
+> **Note :** You may setup your OCaml according to the `Getting started` guide above depending on your operating system.
+
+![Interpreter](https://i.imgur.com/DiUzmw8.png)
+
+If everything has been set up correctly, the panel should open and display your current version of OCaml.
+
+![Interpreter Ready](https://i.imgur.com/MvbWU69.png)
+
+From there, you can enter commands like you would in your OCaml terminal next to the `#`, or use other features of the plugin.
+
+## Actions
+### Execute Ocaml File
+
+The `Execute OCaml File` action can be executed only in `.ml` files ( `.mli` files will later be available for use with OCamlJ )
+Executing this action will send the content of the current file opened in the Editor to the interpreter. It will then display in the
+interpreter which file you just executed, and the response of ocaml after each statement.
+
+![Execute File in Interpreter](https://i.imgur.com/NyKtXXZ.png)
+
+### Execute Selection
+
+The `Execute OCaml Selection` action can be executed only in `.ml` files ( `.mli` files will later be available for use with OCamlJ )
+Executing this action will send the content of the current selection in the Editor to the interpreter. 
+It will display what has been sent in the editor and the response of ocaml.
+
+> **Note :** It only takes the selection and not its surroundings, event if the statement is not complete, in which
+> case it will mostly result in an OCaml error !
+
+![Execute Selection in Interpreter](https://i.imgur.com/SPNhr5z.png)
+
+### Restart the OCaml Interpreter
+
+In case your interpreter run into trouble, or crash after a certain error, there is a button to reload OCaml which can be useful in case of an infinite loop
+by pressing the button it will stop the old instance of OCaml, all previous given variables and functions will need to be executed again.
+Reloading the instance may take around a second or so.
+
+![Reloading Core](https://i.imgur.com/PeiTqTh.png)
+
+# Feedback & Bugs-Reports
+
+Feedback, positive & negative is welcome, suggestions as well, for all of those you can create an issue under the [Issues panel of this repository](https://github.com/Thomas-SBE/caml-intellij/issues), but please verify is your issue is not already listed.
+
+*Thanks a lot for visiting and hopefuly using my plugin !*

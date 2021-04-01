@@ -1,5 +1,7 @@
 package org.tsbe.camlj.console;
 
+
+import org.apache.commons.lang.SystemUtils;
 import org.tsbe.camlj.exception.OcamlJInterruptedException;
 import org.tsbe.camlj.interfaces.NewLineListener;
 import org.tsbe.camlj.settings.AppSettingsState;
@@ -50,11 +52,17 @@ public class CamlInterface extends Component implements Runnable {
 
     public void reload(){
         try {
-            AppSettingsState settings = AppSettingsState.getInstance();
-            process = Runtime.getRuntime().exec(settings.OcamlLocation + "\\bin\\ocaml.exe -I \"" + settings.OcamlLocation + "\\lib\\ocaml\"");
+            if (SystemUtils.IS_OS_WINDOWS) {
+                AppSettingsState settings = AppSettingsState.getInstance();
+                process = Runtime.getRuntime().exec(settings.OcamlLocation + "\\bin\\ocaml.exe -I \"" + settings.OcamlLocation + "\\lib\\ocaml\"");
+            } else {
+                process = Runtime.getRuntime().exec("ocaml");
+            }
             stdout = new BufferedReader(new InputStreamReader(process.getInputStream()));
             stdin = new BufferedWriter(new OutputStreamWriter(process.getOutputStream()));
             WindowCaml.getInstance().clearConsole();
+        }catch (IOException e){
+            WindowCaml.getInstance().addErrorLine("The plugin cannot find a suitable ocaml installation, check the settings of the plugin under : Tools -> OCamlJ.");
         }catch (Exception e) {
             e.printStackTrace();
         }
@@ -75,6 +83,7 @@ public class CamlInterface extends Component implements Runnable {
     @Override
     public void run() {
         reload();
+        if(process == null){return;}
         Scanner scanner = null;
         try {
             Thread.sleep(1000);

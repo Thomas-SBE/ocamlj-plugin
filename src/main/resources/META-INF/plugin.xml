@@ -2,12 +2,21 @@
     <id>com.tsbe.ocamlj</id>
     <name>IntelliJ OCaml Interpreter</name>
     <vendor>Thomas "Sahkunata" Berthelot</vendor>
+    <version>0.1a</version>
 
     <description>
         <![CDATA[
-            This plugins implements an Ocaml interpreter.
+            This plugins implements an Ocaml interpreter directly inside IntelliJ.
         ]]>
     </description>
+
+    <change-notes>
+        <![CDATA[
+      <ul>
+        <li><b>0.1a</b> Initial plugin version for IntelliJ.</li>
+      </ul>
+    ]]>
+    </change-notes>
 
     <!-- Product and plugin compatibility requirements -->
     <!-- https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
@@ -17,13 +26,13 @@
         <toolWindow id="Ocaml Interpreter" secondary="true" anchor="right" factoryClass="org.tsbe.camlj.console.ToolWindowCaml"/>
         <applicationConfigurable parentId="tools" instance="org.tsbe.camlj.settings.AppSettingsConfigurable"
                                  id="org.tsbe.camlj.settings.AppSettingsConfigurable"
-                                 displayName="OcamlJ Interpreter"/>
+                                 displayName="OCamlJ"/>
         <applicationService serviceImplementation="org.tsbe.camlj.settings.AppSettingsState"/>
     </extensions>
 
     <actions>
         <action class="org.tsbe.camlj.editor.ExecuteOcamlLineAction" id="org.tsbe.camlj.editor.ExecuteOcamlLineAction"
-                text="Execute Ocaml Statement" description="Executes the statement where the cursor is positionned." icon="AllIcons.Hierarchy.MethodDefined">
+                text="Execute Ocaml Selection" description="Executes the statement where the cursor is positionned." icon="AllIcons.Hierarchy.MethodDefined">
             <add-to-group group-id="EditorPopupMenu" anchor="first"/>
         </action>
         <action class="org.tsbe.camlj.editor.ExecuteOcamlFileAction" id="org.tsbe.camlj.editor.ExecuteOcamlFileAction"

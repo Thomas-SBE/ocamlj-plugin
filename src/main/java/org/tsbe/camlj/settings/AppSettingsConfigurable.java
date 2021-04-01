@@ -22,7 +22,7 @@ public class AppSettingsConfigurable implements Configurable {
      */
     @Override
     public @NlsContexts.ConfigurableName String getDisplayName() {
-        return "OcamlJ Interpretter";
+        return "OCamlJ";
     }
 
     /**

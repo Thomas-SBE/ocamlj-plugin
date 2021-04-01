@@ -31,6 +31,7 @@ public class WindowCaml implements NewLineListener {
     private JTextField sin;
     private JPanel sout_border;
     private JScrollPane scrollPane;
+    private JButton button1;
 
     private EditorColorsScheme colorsScheme;
 
