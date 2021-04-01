@@ -7,7 +7,7 @@ to download another plugin for that.
 
 I suggest [ReasonML Plugin](https://plugins.jetbrains.com/plugin/9440-reasonml) for syntax highlighting.
 
-Full functionnalities description [here](https://github.com/Thomas-SBE/caml-intellij#readme).
+Full functionnalities description [here](https://github.com/Thomas-SBE/ocamlj-plugin#readme).
 
 <!-- Plugin description end -->
 
@@ -39,7 +39,7 @@ This is a requirement for Linux users !
 
 ## Current Features
 
-> *Note that this plugin is still under development, errors and bugs may occur, please report them by creating issues* [*here*](https://github.com/Thomas-SBE/caml-intellij/issues).
+> *Note that this plugin is still under development, errors and bugs may occur, please report them by creating issues* [*here*](https://github.com/Thomas-SBE/ocamlj-plugin/issues).
 
 ## Ocaml Interpreter
 By default the interpreter is located in the bottom right hand corner of the IDE,
@@ -85,6 +85,6 @@ Reloading the instance may take around a second or so.
 
 # Feedback & Bugs-Reports
 
-Feedback, positive & negative is welcome, suggestions as well, for all of those you can create an issue under the [Issues panel of this repository](https://github.com/Thomas-SBE/caml-intellij/issues), but please verify is your issue is not already listed.
+Feedback, positive & negative is welcome, suggestions as well, for all of those you can create an issue under the [Issues panel of this repository](https://github.com/Thomas-SBE/ocamlj-plugin/issues), but please verify is your issue is not already listed.
 
 *Thanks a lot for visiting and hopefuly using my plugin !*

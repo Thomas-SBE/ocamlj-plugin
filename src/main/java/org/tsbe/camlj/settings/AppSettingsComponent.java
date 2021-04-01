@@ -84,12 +84,12 @@ public class AppSettingsComponent {
             link_clickable.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    try{ Desktop.getDesktop().browse(new URI("https://github.com/Thomas-SBE/caml-intellij#readme")); }
+                    try{ Desktop.getDesktop().browse(new URI("https://github.com/Thomas-SBE/ocamlj-plugin#readme")); }
                     catch (Exception ex){}
                 }
             });
             info_text.setText("<html>For setting up instructions, you can read the documentation here :</html>");
-            link_clickable.setText("https://github.com/Thomas-SBE/caml-intellij#readme");
+            link_clickable.setText("https://github.com/Thomas-SBE/ocamlj-plugin#readme");
         }
     }
 
