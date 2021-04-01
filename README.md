@@ -13,7 +13,7 @@ Full functionnalities description [here](https://github.com/Thomas-SBE/caml-inte
 
 ------
 
-##Getting Started
+## Getting Started
 
 **For both installations an OCaml installation is required, you can find instructions [HERE](https://ocaml.org/docs/install.html) !**
 
