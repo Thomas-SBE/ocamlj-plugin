@@ -1,11 +1,13 @@
-# OcamlJ Embeded IntelliJ Interpreter
+
+
+<img align="left" alt="OCamlJ" width="64px" src="./src/main/resources/META-INF/pluginIcon.svg"><h1><b>OCamlJ</b> <sub><sub><sup><sup>Embeded OCaml IntelliJ Interpreter, File & Statement Executer</sup></sup></sub></sub></h1>
 
 <!-- Plugin description -->
 **OcamlJ** is an embeded Ocaml terminal / console in IntelliJ, it also allows file reading
-and executing with one click. This plugin **does not** highlight syntax, it is recommended
+and executing with one click. This plugin **does not highlight syntax yet**, it is recommended
 to download another plugin for that. 
 
-I suggest [ReasonML Plugin](https://plugins.jetbrains.com/plugin/9440-reasonml) for syntax highlighting.
+I suggest [ReasonML Plugin](https://plugins.jetbrains.com/plugin/9440-reasonml) for syntax highlighting, for now.
 
 Full functionnalities description [here](https://github.com/Thomas-SBE/ocamlj-plugin#readme).
 
@@ -85,6 +87,7 @@ Reloading the instance may take around a second or so.
 
 # Feedback & Bugs-Reports
 
-Feedback, positive & negative is welcome, suggestions as well, for all of those you can create an issue under the [Issues panel of this repository](https://github.com/Thomas-SBE/ocamlj-plugin/issues), but please verify is your issue is not already listed.
+Feedback, positive or negative is welcome, you can post suggestions to the [Discussion Panel](https://github.com/Thomas-SBE/ocamlj-plugin/discussions). If you encounter
+any bug or error, please report them in the [Issues Panel](https://github.com/Thomas-SBE/ocamlj-plugin/issues).
 
 *Thanks a lot for visiting and hopefuly using my plugin !*
