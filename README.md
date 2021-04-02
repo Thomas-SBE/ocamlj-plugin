@@ -1,4 +1,4 @@
-
+[![Build](https://github.com/Thomas-SBE/ocamlj-plugin/actions/workflows/build.yml/badge.svg)](https://github.com/Thomas-SBE/ocamlj-plugin/actions/workflows/build.yml)
 
 <img align="left" alt="OCamlJ" width="64px" src="./src/main/resources/META-INF/pluginIcon.svg"><h1><b>OCamlJ</b> <sub><sub><sup><sup>Embeded OCaml IntelliJ Interpreter, File & Statement Executer</sup></sup></sub></sub></h1>
 
