@@ -23,7 +23,7 @@
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow id="Ocaml Interpreter" secondary="true" anchor="right" factoryClass="org.tsbe.camlj.console.ToolWindowCaml"/>
+        <toolWindow id="Ocaml Interpreter" secondary="true" anchor="right" factoryClass="org.tsbe.camlj.console.ToolWindowCaml" icon="AllIcons.Debugger.Console"/>
         <applicationConfigurable parentId="tools" instance="org.tsbe.camlj.settings.AppSettingsConfigurable"
                                  id="org.tsbe.camlj.settings.AppSettingsConfigurable"
                                  displayName="OCamlJ"/>
