@@ -106,7 +106,7 @@ public class WindowCaml implements NewLineListener {
     }
 
     public void addHeaderLines(String s){
-        appendToPanel(s, fetchIJColor("CONSOLE_GREEN_BRIGHT_OUTPUT", false), true);
+        appendToPanel(s, fetchIJColor("CONSOLE_GREEN_OUTPUT", false), true);
         giveSpace(1);
     }
 

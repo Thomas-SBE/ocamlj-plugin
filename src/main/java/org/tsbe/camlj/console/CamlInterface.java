@@ -94,7 +94,7 @@ public class CamlInterface extends Component implements Runnable {
             while (scanner.hasNextLine()) {
                 line = scanner.nextLine();
                 if(!running){throw new OcamlJInterruptedException();}
-                if (isHeader && !isFileRead) {
+                if (line.trim().startsWith("OCaml") && isHeader && !isFileRead) {
                     isHeader = false;
                     defineCamlHeader(line);
                     eq.postEvent(new NewLineAWTEvent(this, line, NewLineAWTEvent.HEADER));

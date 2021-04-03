@@ -1,22 +1,14 @@
 <idea-plugin>
     <id>com.tsbe.ocamlj</id>
-    <name>IntelliJ OCaml Interpreter</name>
-    <vendor>Thomas "Sahkunata" Berthelot</vendor>
-    <version>0.1a</version>
+    <name>OCamlJ</name>
+    <vendor>Thomas Berthelot</vendor>
+    <version>0.0.1</version>
 
     <description>
         <![CDATA[
-            This plugins implements an Ocaml interpreter directly inside IntelliJ.
+            This plugins implements an Ocaml interpreter & file execution tools directly inside IntelliJ.
         ]]>
     </description>
-
-    <change-notes>
-        <![CDATA[
-      <ul>
-        <li><b>0.1a</b> Initial plugin version for IntelliJ.</li>
-      </ul>
-    ]]>
-    </change-notes>
 
     <!-- Product and plugin compatibility requirements -->
     <!-- https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
@@ -35,8 +27,14 @@
                 text="Execute Ocaml Selection" description="Executes the statement where the cursor is positionned." icon="AllIcons.Hierarchy.MethodDefined">
             <add-to-group group-id="EditorPopupMenu" anchor="first"/>
         </action>
+        <action class="org.tsbe.camlj.editor.ExecuteOcamlStatementAction" id="org.tsbe.camlj.editor.ExecuteOcamlStatementAction"
+                text="Execute Ocaml Statement" description="Executes the statement where the cursor is positionned." icon="AllIcons.Hierarchy.MethodDefined">
+            <keyboard-shortcut first-keystroke="control F1" keymap="$default"/>
+            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+        </action>
         <action class="org.tsbe.camlj.editor.ExecuteOcamlFileAction" id="org.tsbe.camlj.editor.ExecuteOcamlFileAction"
                 text="Execute Ocaml File" description="Executes the file currently opened." icon="AllIcons.Actions.Execute">
+            <keyboard-shortcut first-keystroke="control alt F1" keymap="$default"/>
             <add-to-group group-id="EditorPopupMenu" anchor="first"/>
         </action>
         <group id="org.tsbe.camlj.editor.CustomCamlActionGroup" text="Ocaml Interpreter: " popup="false">
