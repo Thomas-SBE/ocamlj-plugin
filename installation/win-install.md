@@ -12,7 +12,7 @@ OCaml is installed or browse for it.
 > 
 > `.\lib\ocaml` _where all ocaml modules are stored._
 
-**After defining the location of OCaml, either restart IntelliJ or Restart the interpreter, see below under `Restart the OCaml Interpreter` section in actions.**
+**After defining the location of OCaml, either restart IntelliJ or Restart the interpreter, see below under `Restarting the interpreter` section [HERE](https://thomas-sbe.github.io/ocamlj-plugin/features/embeded-interpreter.html).**
 
 If everything has been set-up correctly, you should see an OCaml version when opening or restarting the interpreter.
 

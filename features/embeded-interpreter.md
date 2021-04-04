@@ -13,6 +13,7 @@ When opened and if setup correctly, you should have a panel similar to this ( co
 
 From there you can type your OCaml commands right next to the `#` and press the `ENTER` key to submit it to the interpreter.
 
+### Restarting the interpreter
 
 **In case of crashing / console not linking with OCaml, you can refresh the interpreter by pressing a red refresh icon on the top right of the IDE**
 
