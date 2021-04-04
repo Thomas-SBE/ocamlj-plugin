@@ -1,6 +1,7 @@
 [![Build](https://github.com/Thomas-SBE/ocamlj-plugin/actions/workflows/build.yml/badge.svg)](https://github.com/Thomas-SBE/ocamlj-plugin/actions/workflows/build.yml)
 
-<img align="left" alt="OCamlJ" width="64px" src="https://raw.githubusercontent.com/Thomas-SBE/ocamlj-plugin/138c2932e2446aa9d56cd5284e5944991f576d0e/src/main/resources/META-INF/pluginIcon.svg"><h1><b>OCamlJ</b> <sub><sub><sup><sup>Embeded OCaml IntelliJ Interpreter, File & Statement Executer</sup></sup></sub></sub></h1>
+<img alt="OCamlJ" width="64px" src="https://raw.githubusercontent.com/Thomas-SBE/ocamlj-plugin/138c2932e2446aa9d56cd5284e5944991f576d0e/src/main/resources/META-INF/pluginIcon.svg">
+# OCamlJ <sub><sup>Embeded OCaml IntelliJ Interpreter, File & Statement Executer</sup></sub>
 
 <!-- Plugin description -->
 **OcamlJ** is an embeded Ocaml terminal / console in IntelliJ, it also allows file reading
@@ -40,7 +41,7 @@ To verify that Ocaml is properly installed, launch a terminal and type `ocaml`, 
 This is a requirement for Linux users !
 
 ## Current Features
-
+ 
 > *Note that this plugin is still under development, errors and bugs may occur, please report them by creating issues* [*here*](https://github.com/Thomas-SBE/ocamlj-plugin/issues).
 
 ## Ocaml Interpreter
