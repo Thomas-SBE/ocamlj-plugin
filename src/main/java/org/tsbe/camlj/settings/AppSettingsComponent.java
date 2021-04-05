@@ -69,12 +69,12 @@ public class AppSettingsComponent {
             link_clickable.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    try{ Desktop.getDesktop().browse(new URI("https://github.com/Thomas-SBE/caml-intellij#readme")); }
+                    try{ Desktop.getDesktop().browse(new URI("https://thomas-sbe.github.io/ocamlj-plugin/installation/")); }
                     catch (Exception ex){}
                 }
             });
             info_text.setText("<html>You are under Non-Windows Operating System, it is not required to define where OCaml is installed.<br>For more informations, see :</html>");
-            link_clickable.setText("https://github.com/Thomas-SBE/caml-intellij#readme");
+            link_clickable.setText("https://thomas-sbe.github.io/ocamlj-plugin/installation/");
             ocaml_fl.setEnabled(false);
             ocaml_fl_select_dir.setEnabled(false);
         }else{
@@ -89,7 +89,7 @@ public class AppSettingsComponent {
                 }
             });
             info_text.setText("<html>For setting up instructions, you can read the documentation here :</html>");
-            link_clickable.setText("https://github.com/Thomas-SBE/ocamlj-plugin#readme");
+            link_clickable.setText("https://thomas-sbe.github.io/ocamlj-plugin/installation/");
         }
     }
 

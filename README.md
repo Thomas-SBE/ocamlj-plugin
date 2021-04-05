@@ -9,13 +9,13 @@ to download another plugin for that.
 
 I suggest [ReasonML Plugin](https://plugins.jetbrains.com/plugin/9440-reasonml) for syntax highlighting, for now.
 
-Full functionnalities description [here](https://github.com/Thomas-SBE/ocamlj-plugin#readme).
+Full functionnalities description [here](https://thomas-sbe.github.io/ocamlj-plugin/features/).
 
 <!-- Plugin description end -->
 
 # Documentation
 
-All features' descriptions and setting up instructions can be found [here](https://thomas-sbe.github.io/ocamlj-plugin/).
+All features' descriptions and setting up instructions can be found [here](https://thomas-sbe.github.io/ocamlj-plugin/features/).
 
 # Feedback & Bugs-Reports
 
